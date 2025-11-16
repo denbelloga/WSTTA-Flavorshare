@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browse Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav><!-- Same as landing-page.html --></nav>
+    <div class="recipe-grid">
+        <div class="recipe-card" onclick="openModal('Recipe 1')">
+            <img src="placeholder.jpg" alt="Recipe Image">
+            <h3>Recipe 1</h3>
+        </div>
+        <!-- Add more cards -->
+    </div>
+    <div id="modal" style="display: none;">
+        <div class="modal-content">
+            <span onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p>Recipe details here...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
