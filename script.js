@@ -29,4 +29,16 @@ document.getElementById('signUpBtn').addEventListener('click', () => {
     }
     alert('Account created!'); // Mock success
     document.getElementById('signUpForm').style.display = 'none';
+
+    function openModal(title) {
+    document.getElementById('modal').style.display = 'block';
+    document.getElementById('modalTitle').textContent = title;
+}
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+}
+// Close on outside click
+window.onclick = function(event) {
+    if (event.target == document.getElementById('modal')) closeModal();
+};
 });
