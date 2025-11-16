@@ -1,0 +1,17 @@
+/* Nav bar */
+nav { display: flex; justify-content: space-between; padding: 10px; background: #f0f0f0; }
+nav ul { list-style: none; display: flex; }
+nav a { margin: 0 10px; text-decoration: none; color: #333; }
+nav a:hover { text-decoration: underline; color: #007bff; } /* Hover states */
+
+/* Hero section */
+.hero { text-align: center; padding: 50px; background: url('hero-image.jpg') no-repeat center; } /* Add a hero image if available */
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* Mobile responsiveness (expand from prior suggestions) */
+@media (max-width: 600px) {
+    nav { flex-direction: column; }
+    .hero { padding: 20px; }
+}
